@@ -1,0 +1,42 @@
+.footer {
+  background-image: url(../static/img/header-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  @media screen and (max-width: 640px) {
+    position: static;
+  }
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1920px;
+    margin: 0 auto;
+    padding: 20px 5%;
+    overflow: hidden;
+
+    @media screen and (max-width: 640px) {
+      padding: 10px;
+    }
+  }
+  & span {
+    color: $white;
+  }
+
+  &__link {
+    display: inline-block;
+    color: $white;
+    padding-left: 30px;
+    background-image: url(../static/img/social-media.png);
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: 20px 20px;
+    text-decoration: none;
+    transition: .3s;
+
+    &:hover {
+      color: $blue-light;
+    }
+  }
+}

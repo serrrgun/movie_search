@@ -1,0 +1,41 @@
+.slider {
+  position: relative;
+  width: 90%;
+  margin: 0 auto;
+  padding-bottom: 30px;
+
+  &__container {
+    width: 100%;
+    padding-bottom: 50px;
+  }
+
+  &__btn-prev {
+    left: -4.5%;
+    transition: .3s;
+
+    &:hover {
+      transform: scale(0.9);
+    }
+
+    @media screen and (max-width: 640px) {
+      display: none;
+    }
+  }
+  &__btn-next {
+    right: -4.5%;
+    transition: .3s;
+
+    &:hover {
+      transform: scale(0.9);
+    }
+
+    @media screen and (max-width: 640px) {
+      display: none;
+    }
+  }
+
+  & .swiper-pagination {
+    bottom: 0px;
+    overflow: hidden;
+  }
+}

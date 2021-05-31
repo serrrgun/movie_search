@@ -1,0 +1,101 @@
+.search {
+  padding: 40px 20px 10px;
+
+  @media screen and (max-width: 640px) {
+    padding-top: 20px;
+  }
+
+  &__form {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+
+    @media screen and (max-width: 640px) {
+      flex-direction: column;
+    }
+  }
+
+  &__label {
+    width: 90%;
+    position: relative;
+
+    @media (max-width: 1440px) {
+      width: 75%;
+    }
+
+    @media screen and (max-width: 640px) {
+      width: 100%;
+      margin-bottom: 10px;
+    }
+  }
+
+  &__input {
+    display: block;
+    width: 100%;
+    border-radius: 5px;
+    border: 2px solid $blue;
+    outline: none;
+    padding: 12px 20px;
+    padding-left: 45px;
+    box-sizing: border-box;
+    background-image: url(../static/img/zoom.png);
+    background-position: 10px center;
+    background-repeat: no-repeat;
+    background-size: 30px 32px;
+  }
+
+  &__input-cross {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    width: 25px;
+    height: 25px;
+    transform: translateY(-50%);
+    background-image: url(../static/img/cross.png);
+    background-position: center;
+    background-size: contain;
+    cursor: pointer;
+    transition: .3s;
+
+    &:hover {
+      opacity: .7;
+    }
+  }
+
+  &__btn {
+    width: 8%;
+    padding: 10px 20px ;
+    border: 2px solid $blue;
+    border-radius: 5px;
+    background-color: $blue-light;
+    color: $white;
+    font-size: 2rem;
+    cursor: pointer;
+    transition: .3s;
+
+    &:hover {
+      background-color: $blue-light-opacity;
+    }
+
+    &:disabled {
+      background-color: red;
+    }
+
+    @media screen and (max-width: 1440px) {
+      width: 20%;
+    }
+
+    @media screen and (max-width: 640px) {
+      width: 100%;
+    }
+  }
+
+  &__info {
+    padding: 0;
+    margin: 5px;
+    min-height: 26px;
+    text-align: center;
+    color: rgb(241, 58, 58);
+  }
+}

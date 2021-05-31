@@ -1,0 +1,49 @@
+.slide {
+  &__img {
+    height: 55vh;
+
+    @media screen and (max-width: 640px) {
+      height: 70vh;
+    }
+
+    @media (min-width: 640px) and (max-width: 1280px) {
+      height: 50vh;
+    }
+
+    img {
+      object-fit: cover;
+      opacity: 0;
+      transform: translateY(40px);
+      z-index: 100;
+      transition: .5s ease-in;
+    }
+
+    &--active {
+      img {
+        opacity: 1;
+        transform: translateY(0px);
+      }
+    }
+  }
+
+  &__title {
+    display: inline-block;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 2rem;
+    text-decoration: none;
+    color: black;
+    transition: .3s ease-in;
+
+    &:hover {
+      color: rgba(0, 0, 0, .5);
+    }
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+  }
+}

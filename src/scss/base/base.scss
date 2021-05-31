@@ -1,0 +1,32 @@
+html {
+  font-size: 10px;
+}
+
+body {
+  height: 100%;
+  @extend %font-prim;
+  @include font($size: 1.6rem, $height: 2.6rem, $weight: bold);
+}
+
+img {
+  width: 100%;
+  max-height: 100%;
+  height: auto;
+  display: block;
+}
+
+.main-content {
+  position: relative;
+  min-height: calc(100vh - 182px);
+}
+
+.container {
+  // display: flex;
+  // flex-direction: column;
+  // overflow: hidden;
+}
+
+.wrapper {
+  max-width: 1920px;
+  margin: 0 auto;
+}

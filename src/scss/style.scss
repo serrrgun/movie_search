@@ -1,0 +1,15 @@
+// base
+@import './base/fonts.scss';
+@import './base/mixin.scss';
+@import './base/variables.scss';
+@import './base/base.scss';
+
+// blocks
+
+@import '../js/views/AppView/header.scss';
+@import '../js/views/SearchView/search.scss';
+@import '../js/views/SliderView/slider.scss';
+@import '../js/views/SliderView/slide.scss';
+@import '../js/views/PreloaderView/preloader.scss';
+@import '../js/views/AppView/footer.scss';
+@import '../js/views/PopupView/popup.scss';
